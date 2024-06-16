@@ -19,16 +19,27 @@
   left: 0;
 }
 
-.linkContainer {
+.content {
   position: absolute;
-  bottom: 3rem;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.linkContainer {
   display: flex;
   gap: 3rem;
 }
 
-.link svg {
-  color: red;
-  fill: red;
+.owl {
+  width: 100%;
+  max-width: 400px;
+}
+
+.owl img {
+  position: relative !important;
 }
