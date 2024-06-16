@@ -1,9 +1,15 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
+import { Fleur_De_Leah, MedievalSharp } from "next/font/google";
+
+const fleur = Fleur_De_Leah({ subsets: ["latin"], weight: "400" });
+const medieval = MedievalSharp({ subsets: ["latin"], weight: "400" });
+
 export default function Home() {
   return (
     <main className={styles.main}>
+      <title>Eanar Music</title>
       <div className={styles.container}>
         <Image
           src="/images/banner.png"
@@ -13,6 +19,10 @@ export default function Home() {
           fill
         />
         <div className={styles.content}>
+          <div className={styles.titleContainer}>
+            <h1 className={fleur.className}>Eanar</h1>
+            <h2 className={medieval.className}>MUSIC</h2>
+          </div>
           <div className={styles.owl}>
             <Image src="/images/owl.png" alt="Owl image" priority fill />
           </div>
