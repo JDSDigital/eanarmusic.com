@@ -9,7 +9,6 @@ const medieval = MedievalSharp({ subsets: ["latin"], weight: "400" });
 export default function Home() {
   return (
     <main className={styles.main}>
-      <title>Eanar Music</title>
       <div className={styles.container}>
         <Image
           src="/images/banner.png"
